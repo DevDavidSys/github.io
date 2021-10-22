@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="all">
+            <div class="background-configuration" id="background_configuration">
+                <div class="configuration">
+                    <div class="close-configuration" id="close_configuration">X</div>
+                    <h4>Configuração</h4>
+                    <h6>TotalBalls</h6>
+                    <input id="config_totalballs" type="number">
+                    <h6>Speed</h6>
+                    <input id="config_speed" type="number">
+                    <button id="confirm_configuration">Confirmar</button>
+                </div>
+            </div>
+            <nav  class="nav-bar" id="nav"><!--Quando clicado, vai aumentar a largura e mostrar outro conteudo-->
+                <ul>
+                    
+                    <li><div class="bar-decoration"></li>
+                    <li class="nav" id="op0">Novo Jogo</li>
+                    <li><div class="bar-decoration"></li>
+                    <li class="nav" id="op1">Configurações</li>
+                    <li><div class="bar-decoration"></li>
+                    <li class="nav" id="op2">Sobre</li>
+                    <li><div class="bar-decoration"></li>
+                    <li class="nav" id="op3">Contato</li>
+                   
+                </ul>
+                <div class="icon"></div>
+            </nav>
+            <div class="display" >
+                <div id ='game' class="game">
+                    
+                </div>
+            </div>
+            <div class="background-configuration" id="background_about">
+                <div class="close-configuration" id="close_about">X</div>
+                <div class="configuration">
+
+                    Este pequeno jogo foi feito afim de mostrar meus conhecimentos em JavaScript.
+                    Divirta-se um pouco :)
+                </div>
+            </div>
+        </div><!--all-->
+        
+    </body>
+
+    <script src="onload.js" ></script>
+</html>
