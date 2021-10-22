@@ -136,11 +136,21 @@ nav ul li{
     width: 500px;
     height: 500px;
     border: 1px solid black;
+    overflow: hidden;
+    
+}
+.circle-bigger{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .circle{
     width: 20px;
     height: 20px;
-    background-color: black;
     border-radius: 50px;
 }

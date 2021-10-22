@@ -62,10 +62,39 @@ function sleep(ms) {
 */
 
 function createCircle(){
-    let Height = getRandomIntInclusive(0,478);
-    let Width = getRandomIntInclusive(0,478);
-    game.display.innerHTML=`<div class="circle" style="position: relative; top:${Height}px; left:${Width}px"></div>`;
-    document.getElementsByClassName('circle')[0].addEventListener('click',addPoint);
+    let Height = getRandomIntInclusive(-90,389);
+    let Width = getRandomIntInclusive(-90,389);
+    console.log(Height);
+    game.display.innerHTML=`<div class="circle-bigger" id="circle_bigger" style="top:${Height}px;left:${Width}px">
+            <div id="circle" class="circle" ></div>
+        </div>`;
+
+    let bolinha = document.getElementById('circle');
+    let bolinhaMaior = document.getElementById('circle_bigger');
+
+    bolinha.addEventListener('click',addPoint);
+    let anim1 = setInterval(frame1,1);
+    let anim2 = setInterval(frame2,1);
+    let color1 = 255;
+    let color2 = 255;
+    function frame1(){
+        if(color1 > 0){
+            color1--;
+            bolinha.style.backgroundColor = `rgb(${color1},${color1},${color1})`;
+        }
+        else{
+            clearInterval(anim1);
+        }
+    }
+    function frame2(){
+        if(color2 > 0){
+            color2--;
+            bolinhaMaior.style.backgroundColor = `rgba(255,${color1},${color1},0.5)`;
+        }
+        else{
+            clearInterval(anim2);
+        }
+    }
 
 }
 
