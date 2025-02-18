@@ -1,53 +1,240 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="all">
-            <div class="background-configuration" id="background_configuration">
-                <div class="configuration">
-                    <div class="close-configuration" id="close_configuration">X</div>
-                    <h4>Configuração</h4>
-                    <h6>TotalBalls</h6>
-                    <input id="config_totalballs" type="number">
-                    <h6>Speed</h6>
-                    <input id="config_speed" type="number">
-                    <button id="confirm_configuration">Confirmar</button>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Souza - Engenheiro de Materiais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>DAVI SOUZA</h1>
+            <h2 data-lang="pt">Estudante de Engenheiro de Materiais</h2>
+            <h2 data-lang="en">Materials Engineering Student</h2>
+            <h2 data-lang="fr">Étudiant en génie des matériaux</h2>
+            <h2 data-lang="es">Estudiante de Ingeniería de Materiales</h2>
+            <nav>
+                <div class="language-selector">
+                    <span id="current-language">🌐 Português</span>
+                    <select id="language-select">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="es">Español</option>
+                    </select>
                 </div>
-            </div>
-            <nav  class="nav-bar" id="nav"><!--Quando clicado, vai aumentar a largura e mostrar outro conteudo-->
-                <ul>
-                    
-                    <li><div class="bar-decoration"></li>
-                    <li class="nav" id="op0">Novo Jogo</li>
-                    <li><div class="bar-decoration"></li>
-                    <li class="nav" id="op1">Configurações</li>
-                    <li><div class="bar-decoration"></li>
-                    <li class="nav" id="op2">Sobre</li>
-                    <li><div class="bar-decoration"></li>
-                    <li class="nav" id="op3">Contato</li>
-                   
-                </ul>
-                <div class="icon"></div>
             </nav>
-            <div class="display" >
-                <div id ='game' class="game">
-                    
-                </div>
-            </div>
-            <div class="background-configuration" id="background_about">
-                <div class="close-configuration" id="close_about">X</div>
-                <div class="configuration">
+        </div>
+    </header>
 
-                    Este pequeno jogo foi feito afim de mostrar meus conhecimentos em JavaScript.
-                    Divirta-se um pouco :)
-                </div>
-            </div>
-        </div><!--all-->
-        
-    </body>
+    <main>
+        <div class="container">
+            <div class="left-column">
+                <section id="contact">
+                    <h3 data-lang="pt">Contato</h3>
+                    <h3 data-lang="en">Contact</h3>
+                    <h3 data-lang="fr">Coordonnées</h3>
+                    <h3 data-lang="es">Contacto</h3>
+                    <p>📧 daviguilherme@id.uff.br</p>
+                    <p>📞 +33 7 49 25 68 28</p>
+                    <p data-lang="pt">📍 Montpellier, França</p>
+                    <p data-lang="en">📍 Montpellier, France</p>
+                    <p data-lang="fr">📍 Montpellier, France</p>
+                    <p data-lang="es">📍 Montpellier, Francia</p>
+                
+                </section>
 
-    <script src="onload.js" ></script>
+                
+                <section id="education">
+                    <h3 data-lang="pt">Formação Acadêmica</h3>
+                    <h3 data-lang="en">Education</h3>
+                    <h3 data-lang="fr">Formation Académique</h3>
+                    <h3 data-lang="es">Formación Académica</h3>
+                    <ul>
+                        <li><!--Engenharia de materiais-->
+                            <h4 data-lang="pt">Engenharia de Materiais</h4>
+                            <h4 data-lang="en">Materials Engineering</h4>
+                            <h4 data-lang="fr">Génie des Matériaux</h4>
+                            <h4 data-lang="es">Ingeniería de Materiales</h4>
+                            <p data-lang="pt">Universidade Federal Fluminense (UFF) - Desde 2020</p>
+                            <p data-lang="en">Federal Fluminense University (UFF) - Since 2020</p>
+                            <p data-lang="fr">Université Fédérale Fluminense (UFF) - Depuis 2020</p>
+                            <p data-lang="es">Universidad Federal Fluminense (UFF) - Desde 2020</p>
+                        </li>
+                        <li><!--Técnico em metrologia-->
+                            <h4 data-lang="pt">Técnico em Metrologia</h4>
+                            <h4 data-lang="en">Metrology Technician</h4>
+                            <h4 data-lang="fr">Technicien en métrologie</h4>
+                            <h4 data-lang="es">Técnico en metrología</h4>
+                        
+                            <p data-lang="pt">IFRJ campus Volta Redonda - 2019</p>
+                            <p data-lang="en">IFRJ campus Volta Redonda - 2019</p>
+                            <p data-lang="fr">IFRJ campus Volta Redonda - 2019</p>
+                            <p data-lang="es">IFRJ campus Volta Redonda - 2019</p>
+                        
+                        </li>
+                        <li><!--Técnico em Automação Industrial-->
+                            <h4 data-lang="pt">Técnico em Automação Industrial</h4>
+                            <h4 data-lang="en">Industrial Automation Technician</h4>
+                            <h4 data-lang="fr">Technicien en automatisation industrielle</h4>
+                            <h4 data-lang="es">Técnico en automatización industrial</h4>
+                            
+                            <p data-lang="pt">IFRJ campus Volta Redonda - 2015 -> 2019</p>
+                            <p data-lang="en">IFRJ campus Volta Redonda - 2015 -> 2019</p>
+                            <p data-lang="fr">IFRJ campus Volta Redonda - 2015 -> 2019</p>
+                            <p data-lang="es">IFRJ campus Volta Redonda - 2015 -> 2019</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="skills">
+                    <h3 data-lang="pt">Habilidades</h3>
+                    <h3 data-lang="en">Skills</h3>
+                    <h3 data-lang="fr">Compétences</h3>
+                    <h3 data-lang="es">Habilidades</h3>
+                    <ul>
+                        <ul>
+                            <li data-lang="pt">🔬 Análise de Materiais</li>
+                            <li data-lang="en">🔬 Materials Analysis</li>
+                            <li data-lang="fr">🔬 Analyse des Matériaux</li>
+                            <li data-lang="es">🔬 Análisis de Materiales</li>
+                        
+                            <li data-lang="pt">📊 Gestão de Projetos</li>
+                            <li data-lang="en">📊 Project Management</li>
+                            <li data-lang="fr">📊 Gestion de Projets</li>
+                            <li data-lang="es">📊 Gestión de Proyectos</li>
+                        
+                            <li data-lang="pt">🧪 Testes de Laboratório</li>
+                            <li data-lang="en">🧪 Laboratory Testing</li>
+                            <li data-lang="fr">🧪 Tests de Laboratoire</li>
+                            <li data-lang="es">🧪 Pruebas de Laboratorio</li>
+                        
+                            <li data-lang="pt">💻 CAD (Desenho Assistido por Computador)</li>
+                            <li data-lang="en">💻 CAD (Computer-Aided Design)</li>
+                            <li data-lang="fr">💻 CAO (Conception Assistée par Ordinateur)</li>
+                            <li data-lang="es">💻 CAD (Diseño Asistido por Computadora)</li>
+                        
+                            <li data-lang="pt">📈 Otimização de Processos</li>
+                            <li data-lang="en">📈 Process Optimization</li>
+                            <li data-lang="fr">📈 Optimisation des Processus</li>
+                            <li data-lang="es">📈 Optimización de Procesos</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section id="languages">
+                    <h3 data-lang="pt">Idiomas</h3>
+                    <h3 data-lang="en">Languages</h3>
+                    <h3 data-lang="fr">Langues</h3>
+                    <h3 data-lang="es">Idiomas</h3>
+                    <ul>
+                        <li>
+                            <h4 data-lang="pt"><img src="https://flagcdn.com/br.svg" alt="Bandeira do Brasil" width="20"> Português</h4>
+                            <h4 data-lang="en"><img src="https://flagcdn.com/br.svg" alt="Flag of Brazil" width="20"> Portuguese</h4>
+                            <h4 data-lang="fr"><img src="https://flagcdn.com/br.svg" alt="Drapeau du Brésil" width="20"> Portugais</h4>
+                            <h4 data-lang="es"><img src="https://flagcdn.com/br.svg" alt="Bandera de Brasil" width="20"> Portugués</h4>
+                            <p data-lang="pt">Língua materna</p>
+                            <p data-lang="en">Native language</p>
+                            <p data-lang="fr">Langue maternelle</p>
+                            <p data-lang="es">Lengua materna</p>
+                        </li>
+                        <li>
+                            <h4 data-lang="pt"><img src="https://flagcdn.com/gb.svg" alt="Bandeira do Reino Unido" width="20"> Inglês</h4>
+                            <h4 data-lang="en"><img src="https://flagcdn.com/gb.svg" alt="Flag of the United Kingdom" width="20"> English</h4>
+                            <h4 data-lang="fr"><img src="https://flagcdn.com/gb.svg" alt="Drapeau du Royaume-Uni" width="20"> Anglais</h4>
+                            <h4 data-lang="es"><img src="https://flagcdn.com/gb.svg" alt="Bandera del Reino Unido" width="20"> Inglés</h4>
+                            <p data-lang="pt">Nível B2</p>
+                            <p data-lang="en">B2 Level</p>
+                            <p data-lang="fr">Niveau B2</p>
+                            <p data-lang="es">Nivel B2</p>
+                        </li>
+                        <li>
+                            <h4 data-lang="pt"><img src="https://flagcdn.com/fr.svg" alt="Bandeira da França" width="20"> Francês</h4>
+                            <h4 data-lang="en"><img src="https://flagcdn.com/fr.svg" alt="Flag of France" width="20"> French</h4>
+                            <h4 data-lang="fr"><img src="https://flagcdn.com/fr.svg" alt="Drapeau de la France" width="20"> Français</h4>
+                            <h4 data-lang="es"><img src="https://flagcdn.com/fr.svg" alt="Bandera de Francia" width="20"> Francés</h4>
+                            <p data-lang="pt">Nível B2</p>
+                            <p data-lang="en">B2 Level</p>
+                            <p data-lang="fr">Niveau B2</p>
+                            <p data-lang="es">Nivel B2</p>
+                        </li>
+                        <li>
+                            <h4 data-lang="pt"><img src="https://flagcdn.com/es.svg" alt="Bandeira da Espanha" width="20"> Espanhol</h4>
+                            <h4 data-lang="en"><img src="https://flagcdn.com/es.svg" alt="Flag of Spain" width="20"> Spanish</h4>
+                            <h4 data-lang="fr"><img src="https://flagcdn.com/es.svg" alt="Drapeau de l'Espagne" width="20"> Espagnol</h4>
+                            <h4 data-lang="es"><img src="https://flagcdn.com/es.svg" alt="Bandera de España" width="20"> Español</h4>
+                            <p data-lang="pt">Nível A1</p>
+                            <p data-lang="en">A1 Level</p>
+                            <p data-lang="fr">Niveau A1</p>
+                            <p data-lang="es">Nivel A1</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section id="profile">
+                    <h2 data-lang="pt">Perfil</h2>
+                    <h2 data-lang="en">Profile</h2>
+                    <h2 data-lang="fr">Profil</h2>
+                    <h2 data-lang="es">Perfil</h2>
+                    <p data-lang="pt">Estudante de Engenharia de Materiais na Universidade Federal Fluminense (UFF), estou em busca de uma oportunidade de estágio para desenvolver minhas habilidades profissionais. Apaixonado por materiais compósitos, desejo adquirir experiência prática que complemente minha formação acadêmica e me permita aprofundar meus conhecimentos nessa área.</p>
+                    <p data-lang="en">Materials Engineering student at the Federal Fluminense University (UFF), I am looking for an internship opportunity to develop my professional skills. Passionate about composite materials, I wish to gain practical experience that complements my academic background and allows me to deepen my knowledge in this field.</p>
+                    <p data-lang="fr">Étudiant en Génie des Matériaux à l'Université Fédérale Fluminense (UFF), je suis à la recherche d'une opportunité de stage pour développer mes compétences professionnelles. Passionné par les matériaux composites, je souhaite acquérir une expérience pratique qui complétera ma formation académique et me permettra d'approfondir mes connaissances dans ce domaine.</p>
+                    <p data-lang="es">Estudiante de Ingeniería de Materiales en la Universidad Federal Fluminense (UFF), estoy buscando una oportunidad de pasantía para desarrollar mis habilidades profesionales. Apasionado por los materiales compuestos, deseo adquirir experiencia práctica que complemente mi formación académica y me permita profundizar mis conocimientos en este campo.</p>
+                </section>
+               
+       
+                <section id="academic-experience">
+                    <h2 data-lang="pt">Experiências Acadêmicas</h2>
+                    <h2 data-lang="en">Academic Experiences</h2>
+                    <h2 data-lang="fr">Expériences Académiques</h2>
+                    <h2 data-lang="es">Experiencias Académicas</h2>
+                    <ul>
+                        <li>
+                            <h3 data-lang="pt">Iniciação Científica</h3>
+                            <h3 data-lang="en">Scientific Initiation</h3>
+                            <h3 data-lang="fr">Initiation Scientifique</h3>
+                            <h3 data-lang="es">Iniciación Científica</h3>
+                            <p data-lang="pt">2023-2024 - Efeito das partículas de sílica na formação de hidratos de metano. Realização de testes, coleta e análise de dados para verificar comportamentos em relação à variação da concentração de sílica.</p>
+                            <p data-lang="en">2023-2024 - Effect of silica particles on methane hydrate formation. Conducting tests, collecting and analyzing data to verify behaviors regarding the variation in silica concentration.</p>
+                            <p data-lang="fr">2023-2024 - Effet des particules de silice sur la formation d'hydrates de méthane. Mener des essais, acquérir des données et les analyser afin de vérifier des comportements par rapport à la variation de concentration de silice.</p>
+                            <p data-lang="es">2023-2024 - Efecto de las partículas de sílice en la formación de hidratos de metano. Realización de pruebas, recopilación y análisis de datos para verificar comportamientos en relación con la variación de la concentración de sílice.</p>
+                        </li>
+                        <li>
+                            <h3 data-lang="pt">Projeto Forja Baja</h3>
+                            <h3 data-lang="en">Forja Baja Project</h3>
+                            <h3 data-lang="fr">Projet Forja Baja</h3>
+                            <h3 data-lang="es">Proyecto Forja Baja</h3>
+                            <p data-lang="pt">2021-2022 - Coordenador da subdivisão Elétrica e Aquisição de Dados. Responsável pela gestão do projeto, desenvolvimento de soluções e gestão de equipe.</p>
+                            <p data-lang="en">2021-2022 - Coordinator of the Electrical and Data Acquisition subdivision. Responsible for project management, solution development, and team management.</p>
+                            <p data-lang="fr">2021-2022 - Coordinateur de la subdivision Électrique et Acquisition de Données. Responsable de la gestion de projet, du développement de solutions et de la gestion d'équipe.</p>
+                            <p data-lang="es">2021-2022 - Coordinador de la subdivisión Eléctrica y Adquisición de Datos. Responsable de la gestión del proyecto, desarrollo de soluciones y gestión de equipo.</p>
+                        </li>
+                        <li>
+                            <h3 data-lang="pt">Prototipo: Índice de Qualidade do Ar</h3>
+                            <h3 data-lang="en">Prototype: Air Quality Index</h3>
+                            <h3 data-lang="fr">Prototype : Indice de qualité de l'air</h3>
+                            <h3 data-lang="es">Prototipo: Índice de calidad del aire</h3>
+                            <p data-lang="pt">2019-2020 - Criação de um protótipo de índice de qualidade do ar utilizando microcontroladores com sensores infravermelhos de partículas a partir de 1 micrômetro.</p>
+                            <p data-lang="en">2019-2020 - Creation of an air quality index prototype using microcontrollers with infrared particle sensors from 1 micrometer.</p>
+                            <p data-lang="fr">2019-2020 - Création d'un prototype d'indice de qualité de l'air utilisant des microcontrôleurs avec des capteurs infrarouges de particules à partir de 1 micromètre.</p>
+                            <p data-lang="es">2019-2020 - Creación de un prototipo de índice de calidad del aire utilizando microcontroladores con sensores infrarrojos de partículas a partir de 1 micrómetro.</p>
+                        </li>
+                        <!-- Adicione mais experiências acadêmicas aqui -->
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p data-lang="pt">© 2023 Davi Souza. Todos os direitos reservados.</p>
+        <p data-lang="en">© 2023 Davi Souza. All rights reserved.</p>
+        <p data-lang="fr">© 2023 Davi Souza. Tous droits réservés.</p>
+        <p data-lang="es">© 2023 Davi Souza. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
